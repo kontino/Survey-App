@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD9048F42BC0140A005C30BD /* SurveyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9048F32BC0140A005C30BD /* SurveyViewModel.swift */; };
+		BD9048F62BC0146B005C30BD /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9048F52BC0146B005C30BD /* Question.swift */; };
+		BD9048F92BC59736005C30BD /* SimpleToast in Frameworks */ = {isa = PBXBuildFile; productRef = BD9048F82BC59736005C30BD /* SimpleToast */; };
 		BDCCCDD52BBD971F009EDAE2 /* Survey_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCCCDD42BBD971F009EDAE2 /* Survey_AppApp.swift */; };
 		BDCCCDD72BBD971F009EDAE2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCCCDD62BBD971F009EDAE2 /* ContentView.swift */; };
 		BDCCCDD92BBD9720009EDAE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDCCCDD82BBD9720009EDAE2 /* Assets.xcassets */; };
@@ -34,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BD9048F32BC0140A005C30BD /* SurveyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyViewModel.swift; sourceTree = "<group>"; };
+		BD9048F52BC0146B005C30BD /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		BDCCCDD12BBD971F009EDAE2 /* Survey App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Survey App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDCCCDD42BBD971F009EDAE2 /* Survey_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Survey_AppApp.swift; sourceTree = "<group>"; };
 		BDCCCDD62BBD971F009EDAE2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD9048F92BC59736005C30BD /* SimpleToast in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +102,8 @@
 			children = (
 				BDCCCDD42BBD971F009EDAE2 /* Survey_AppApp.swift */,
 				BDCCCDD62BBD971F009EDAE2 /* ContentView.swift */,
+				BD9048F32BC0140A005C30BD /* SurveyViewModel.swift */,
+				BD9048F52BC0146B005C30BD /* Question.swift */,
 				BDCCCDD82BBD9720009EDAE2 /* Assets.xcassets */,
 				BDCCCDDA2BBD9720009EDAE2 /* Preview Content */,
 			);
@@ -143,6 +151,9 @@
 			dependencies = (
 			);
 			name = "Survey App";
+			packageProductDependencies = (
+				BD9048F82BC59736005C30BD /* SimpleToast */,
+			);
 			productName = "Survey App";
 			productReference = BDCCCDD12BBD971F009EDAE2 /* Survey App.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +226,9 @@
 				Base,
 			);
 			mainGroup = BDCCCDC82BBD971F009EDAE2;
+			packageReferences = (
+				BD9048F72BC59736005C30BD /* XCRemoteSwiftPackageReference "SimpleToast" */,
+			);
 			productRefGroup = BDCCCDD22BBD971F009EDAE2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,6 +271,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD9048F42BC0140A005C30BD /* SurveyViewModel.swift in Sources */,
+				BD9048F62BC0146B005C30BD /* Question.swift in Sources */,
 				BDCCCDD72BBD971F009EDAE2 /* ContentView.swift in Sources */,
 				BDCCCDD52BBD971F009EDAE2 /* Survey_AppApp.swift in Sources */,
 			);
@@ -583,6 +599,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BD9048F72BC59736005C30BD /* XCRemoteSwiftPackageReference "SimpleToast" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sanzaru/SimpleToast";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.8.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BD9048F82BC59736005C30BD /* SimpleToast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BD9048F72BC59736005C30BD /* XCRemoteSwiftPackageReference "SimpleToast" */;
+			productName = SimpleToast;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BDCCCDC92BBD971F009EDAE2 /* Project object */;
 }
